@@ -31,7 +31,7 @@ TEST(matrixTests,values)
 int main()
 {
 	int n = 11;
-	double h = 0.1;
+	double h = 1.0/(n-1);
 	
 	std::vector<std::vector<double>> matrix = matrix_A(n, h) ;
 	std::vector<std::vector<double>> inv_matrix = inv_matrix_A(n, matrix);
